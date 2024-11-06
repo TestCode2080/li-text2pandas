@@ -1,5 +1,18 @@
-.ipynb_checkpoints
-.streamlit
-mova_env
-__pycache__
-.env
+# Ignore virtual environment
+.venv/
+
+# Ignore Streamlit secrets
+.streamlit/secrets.toml
+
+# Ignore other common Python files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore Jupyter Notebook checkpoints (if applicable)
+.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+.idea/
+.vscode/
