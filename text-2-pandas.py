@@ -107,3 +107,13 @@ if query := st.chat_input("Enter your query"):
         st.markdown(response_text)
     # Add assistant response to chat history
     st.session_state.messages.append({"role": "assistant", "content": response_text})
+
+    # Add custom CSS to hide the profile link
+    hide_profile_style = """
+        <style>
+        ._profileContainer_51w34_53 {
+            display: none !important;
+        }
+        </style>
+    """
+    st.markdown(hide_profile_style, unsafe_allow_html=True)
